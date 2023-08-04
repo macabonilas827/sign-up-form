@@ -1,0 +1,83 @@
+/* default colors sample */
+:root {
+  --clr-main: #4f46e5;
+  --clr-btn-text: #ffffff;
+  --clr-text: #020617;
+  --clr-error: #dc2626;
+  --clr-succes: #16a34a;
+}
+@font-face {
+  font-family: h1Font;
+  src: url(Norse-Bold.otf);
+}
+
+/* reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: calc(
+    1em + 0.5rem
+  ); /*purpose best spacing that compliments to the desired size */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /*purpose is these list never use inline */
+  max-width: 100%;
+  user-select: none; /*no reason to select any of these*/
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.content,
+.logo {
+  display: flex;
+  flex-flow: column;
+}
+
+.content {
+  flex-flow: column;
+  height: auto;
+  text-align: center;
+}
+
+.aside__container {
+  background-image: url(mila.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+}
+
+.aside__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 15px 0;
+  position: static;
+  color: var(--clr-btn-text);
+
+  background-color: rgba(2, 6, 23, 0.5);
+}
+
+.aside__logo {
+  width: 5rem;
+  transform: rotateY(0deg) rotate(-45deg);
+}
+.aside__treasure {
+  font-family: h1Font;
+  font-size: 2rem;
+}

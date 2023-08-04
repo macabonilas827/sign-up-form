@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="content">
+      <aside class="aside__container">
+        <div class="aside__picture">
+          <img class="aside__logo" src="/airplane.svg" alt="cats" />
+          <h1 class="aside__treasure">Treasure</h1>
+        </div>
+      </aside>
+
+      <main class="container main">
+        <div class="container main__heading">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <form class="container main__form">
+          <p>Let's do this!</p>
+          <div>
+            <label for="firstname">First Name</label>
+            <input type="text" minlength="6" name="firstname" required />
+            <p>Firstname must be alphanumeric and contains 2-50 characters</p>
+          </div>
+          <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" minlength="6" name="lastname" required />
+            <p>Lastname must be alphanumberic and contains 2-50 characters</p>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" required />
+            <p>Email must be a valid address, e.g. me@gmail.com</p>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <p>
+              Password must be alphanumeric (@, _ and - are allword) and must be
+              8-20 characters
+            </p>
+          </div>
+          <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+            <p>Password does not match</p>
+          </div>
+
+          <button type="submit">Create Account</button>
+        </form>
+        <div class="main__footer">
+          Already have an account?<span><a href="#">Log in</a></span>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
