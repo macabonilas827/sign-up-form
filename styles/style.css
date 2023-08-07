@@ -1,6 +1,7 @@
 /* default colors sample */
 :root {
-  --clr-main: #4f46e5;
+  --clr-main: #a117a1;
+  --clr-gray: #e2e8f0;
   --clr-btn-text: #ffffff;
   --clr-text: #020617;
   --clr-error: #dc2626;
@@ -19,6 +20,10 @@
   line-height: calc(
     1em + 0.5rem
   ); /*purpose best spacing that compliments to the desired size */
+}
+
+body {
+  background-color: var(--clr-gray);
 }
 
 img,
