@@ -86,3 +86,72 @@ button {
   font-family: h1Font;
   font-size: 2rem;
 }
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px; /* this will make the container shrink when the viewport touches the container */
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .aside__container {
+    width: 50vw;
+    height: auto;
+    display: flex;
+  }
+  .aside__picture {
+    height: 10%;
+    margin: 19rem 0;
+  }
+
+  .aside__logo {
+    width: 6rem;
+  }
+  .aside__treasure {
+    font-size: 2.5rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .content {
+    min-height: 100vh;
+  }
+  .aside__container {
+    display: flex;
+    max-width: 40vw;
+    max-height: auto;
+  }
+  .aside__picture {
+    height: 10%;
+    margin: 10rem 0;
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  .aside__container {
+    width: 30vw;
+  }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+  .aside__container {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 2xL */
+@media (min-width: 1535px) {
+  .container {
+    max-width: 1535px;
+  }
+}
