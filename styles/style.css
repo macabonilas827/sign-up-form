@@ -57,7 +57,7 @@ button {
 }
 
 .aside__container {
-  background-image: url(mila.jpg);
+  background-image: url(./mila.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
