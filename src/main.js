@@ -7,7 +7,8 @@ const inputs = document.querySelectorAll("input");
 const patterns = {
   firstname: /^[a-z\s\d]{2,50}$/i,
   lastname: /^[a-z\s\d]{2,50}$/i,
-  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i,
+  phone: /^[0-9]{11}$/,
   password: /^[\.\w@-]{8,20}$/i,
 };
 
